@@ -14,5 +14,9 @@ if ('serviceWorker' in navigator) {
   });
 }
 
+const buttonAdd = document.querySelector(".button-add--js");
+const buttonRemove = document.querySelector(".button-remove--js");
+const value = document.querySelector(".counter__value--js");
+const key = new Date().toISOString().slice(0, 10);
 
 
