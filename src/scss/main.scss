@@ -37,8 +37,9 @@ body {
 }
 
 .button-remove {
-	background: none;
-	border: none;
+  background: $dark-blue;
+  border-radius: 4px;
+  border-color: $dark-navy;
 	padding: 12px;
 	min-width: 216px;
 	font-size: 14px;
