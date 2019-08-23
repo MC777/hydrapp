@@ -20,3 +20,10 @@ const value = document.querySelector(".counter__value--js");
 const key = new Date().toISOString().slice(0, 10);
 
 
+buttonRemove.addEventListener("click", e => {
+	const currentValue = parseInt(localStorage.getItem(key));
+	if (currentValue > 0) {
+		localStorage.setItem(key, localStorage.getItem(key) - 1);
+		value.innerHTML = localStorage.getItem(key);
+	}
+});
