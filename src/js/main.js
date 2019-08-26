@@ -41,4 +41,46 @@ buttonRemove.addEventListener("click", e => {
 		localStorage.setItem(key, localStorage.getItem(key) - 1);
 		value.innerHTML = localStorage.getItem(key);
 	}
+	refreshHistory();
 });
+
+function refreshHistory(){
+	history.classList.toggle("history--js-active");
+
+	list.innerHTML = "Historia: ";
+	glassesHistory.length = 0;
+
+	for (let i = 0; i < localStorage.length; i++) {
+		if (localStorage.key(i)[0] == 2) {
+			glassesHistory[i] = {
+				key: localStorage.key(i),
+				value: localStorage.getItem(localStorage.key(i))
+			};
+		}
+	}
+
+	glassesHistory.sort((a, b) => {
+		if (a.key < b.key) {
+			return 1;
+		} else {
+			return -1;
+		}
+	});
+
+	glassesHistory.forEach(item => {
+		let copy;
+		if ((item.value == 0) | (item.value > 4)) {
+			copy = "szklanek";
+		} else if (item.value == 1) {
+			copy = "szklanka";
+		} else {
+			copy = "szklanki";
+		}
+
+		list.innerHTML += `<li class="history__item">${
+			item.key
+		} - <span class="history__span">${item.value} ${copy} ${
+			item.value > 7 ? "✔️" : ""
+		}</span></li>`;
+	});
+}
