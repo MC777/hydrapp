@@ -13,6 +13,10 @@ The main aim of this project is creating PWA aplication tracking glasess of wate
 - ✔ Task runner - GULP
 - ✔ Running environment - Node.js and NPM
 
+### Screen:
+
+![Homepage screenshot](src/assets/img/hydrAPP_screen.PNG)
+
 ### How to run localy hydrapp localy with gulp-starter
 
 `npm install -g gulp-cli`
