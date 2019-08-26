@@ -9,7 +9,7 @@ The main aim of this project is creating PWA aplication tracking glasess of wate
 ### Used tools:
 
 - ✔ Visual Studio Code
-- ✔ Git,
+- ✔ Git
 - ✔ Task runner - GULP
 - ✔ Running environment - Node.js and NPM
 
