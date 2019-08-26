@@ -32,6 +32,7 @@ if (!localStorage.getItem(key)) {
 buttonAdd.addEventListener("click", e => {
 	localStorage.setItem(key, parseInt(localStorage.getItem(key)) + 1);
 	value.innerHTML = localStorage.getItem(key);
+	refreshHistory();
 });
 
 buttonRemove.addEventListener("click", e => {
