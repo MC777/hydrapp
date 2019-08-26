@@ -76,6 +76,15 @@ body {
 
 .history{
 	padding-top: 16px;
-	font-size: 14px;
-	border-bottom: 1px solid;
+	font-size: 12px;
+	list-style-type:none;
+  padding-left: 0pt;
+}
+
+.history__list{
+	padding: 8px 0 0 8px;
+}
+
+.history__item {
+	padding-top: 6px;
 }
