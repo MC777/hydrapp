@@ -4,7 +4,7 @@ Link to app: [open](https://mc777.github.io/hydrapp/)
 
 ### Description:
 
-The main aim of this project is creating PWA aplication tracking glasess of water with use of localStorage as a databases.
+Application built during WTF - Co Ten Frontend course. The main aim of this project was creating PWA application tracking glasses of water with use of localStorage as a databases.
 
 ### Used tools:
 
